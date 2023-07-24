@@ -1,0 +1,71 @@
+/* Estilos generales */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #74c69d;
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.section:hover {
+    background-color: #b7e4c7;
+    color: #2d6a4f;
+}
+
+.containerNav nav div h1 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.redes {
+    margin: 5px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.redes i {
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.redes i:hover {
+    transform: translateY(-5px);
+
+}
+
+/* Media Query para pantallas pequeñas (máximo 768px) */
+@media (max-width: 768px) {
+    .section {
+        font-size: 18px;
+        height: 40px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .redes {
+        margin-top: 5px;
+    }
+
+    /* Ajusta el ancho del menú desplegable para que no ocupe toda la pantalla */
+    .navbar-collapse {
+        width: 100%;
+    }
+}

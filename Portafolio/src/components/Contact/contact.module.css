@@ -1,0 +1,249 @@
+/* Estilos generales */
+.containerForm {
+    height: 50vh;
+    margin: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_box {
+    width: 100%;
+    max-width: 700px;
+    /* Ajusta el ancho máximo según sea necesario */
+    padding: 40px;
+    background: #081c15;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.login_box p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login_box .user_box {
+    position: relative;
+}
+
+
+.email,
+.login_box .user_box textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+.login_box .user_box label {
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    font-size: 22px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login_box form .button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 3px;
+    border: none;
+    background: none;
+}
+
+.login_box .button:hover {
+    background: #fff;
+    color: #272727;
+    border-radius: 5px;
+}
+
+.login_box .button span {
+    position: absolute;
+    display: block;
+}
+
+.login_box .button span:nth-child(1),
+.login_box .button span:nth-child(2),
+.login_box .button span:nth-child(3),
+.login_box .button span:nth-child(4) {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+
+.login_box .button span:nth-child(1) {
+    top: -5px;
+}
+
+.login_box .button span:nth-child(2) {
+    right: -5px;
+    width: 2px;
+    height: 100%;
+}
+
+.login_box .button span:nth-child(3) {
+    bottom: -5px;
+}
+
+.login_box .button span:nth-child(4) {
+    left: -5px;
+    width: 2px;
+    height: 100%;
+}
+
+.login_box p:last-child {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login_box a.a2 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login_box a.a2:hover {
+    color: #aaa;
+}
+
+/* Estilos para el mensaje de éxito */
+.containerMensaje {
+    height: 50vh;
+    opacity: 0;
+    animation: aparecer 1s ease forwards;
+    animation-delay: 0.9s;
+}
+
+.mensajeSuccess {
+    width: 80%;
+    max-width: 350px;
+    height: 15%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de redes sociales */
+.containerRedes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 35px;
+    width: 40%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 3px solid #1b4332;
+    background: #081c15;
+}
+
+.containerRedes i {
+    margin: 5px;
+}
+
+.containerRedes a i {
+    font-size: 38px;
+    color: white;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.containerRedes a i:hover {
+    transform: translateY(-5px);
+}
+
+.whatsappIcon {
+    font-size: 34px;
+    color: white;
+    border: 1px solid white;
+    padding: 1% 5%;
+    margin-left: 6%;
+    border-radius: 10px;
+    background-color: #287525;
+}
+
+.whatsappIcon i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsappIcon i:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para la animación de aparecer */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos adicionales para mejorar la legibilidad en dispositivos pequeños (opcional) */
+@media screen and (max-width: 1280px) {
+    .containerForm {
+        height: 80vh;
+        margin: 7%;
+    }
+
+    .login_box {
+        padding: 20px;
+    }
+
+    .login_box p:first-child {
+        font-size: 1.2rem;
+    }
+
+    .login_box .user_box label {
+        font-size: 18px;
+    }
+
+    .login_box .button {
+        font-size: 14px;
+    }
+
+    .mensajeSuccess {
+        font-size: 24px;
+    }
+
+    .containerRedes {
+        font-size: 30px;
+        width: 70%;
+    }
+}

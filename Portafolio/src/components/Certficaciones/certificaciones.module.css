@@ -1,0 +1,82 @@
+.container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.containerTitle {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.containerTitle h2 {
+    color: #1b4332;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.containerCarousel {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carouselItem div {
+    border-radius: 15px;
+}
+
+.containerCarousel img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    /* Cambiamos la altura a "auto" para mantener la proporción de la imagen */
+}
+
+.containerLinks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+}
+
+.containerLinks h3 {
+    color: #34c287;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.containerLinks a {
+    text-decoration: none;
+    color: white;
+    background-color: #1b4332;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 14%;
+}
+
+.containerLinks a:hover {
+    color: rgb(85, 190, 91);
+}
+
+/* Media Queries para pantallas pequeñas (máximo 768px) */
+@media (max-width: 868px) {
+    .container {
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+
+    .containerCarousel {
+        width: 100%;
+    }
+
+    .containerTitle {
+        font-size: 2rem;
+    }
+
+    .containerLinks a {
+        width: 60%;
+    }
+}
