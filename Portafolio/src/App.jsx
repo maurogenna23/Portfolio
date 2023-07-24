@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       {showLandingPage ? (
         <div className="Landing">
-          <h1 className="text-3xl animate-pulse">Mauro Nelson Genna</h1>
+          <h1>Mauro Nelson Genna</h1>
           <button onClick={handleRedirectToHome} className='button'>View Portfolio</button>
         </div>
       ) : (
