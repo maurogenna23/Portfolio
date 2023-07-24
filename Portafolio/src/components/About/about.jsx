@@ -22,8 +22,11 @@ const About = () => {
                 </div>
             </div>
             <a href="https://docs.google.com/document/d/10h8wy61Rg6mIZqZL7FHccDj9FzbikV--oaiLyhikoRs/edit?usp=drive_link">
-                <button className={styles.btn}> Ver CV
+                <button className={styles.btn}> CV (Español)
                 </button>
+            </a>
+            <a href="https://docs.google.com/document/d/1wCAmOAYRKZ3MGWBGpWJov_WbvkJdIKVonRpvMYCNOQ0/edit?usp=drive_link">
+                <button className={styles.btn}> CV (English)</button>
             </a>
         </div>
     )
